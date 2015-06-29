@@ -66,11 +66,11 @@ all(x > 2)
 is.element(4, x)
 
 # From vectors to matrices
-vaListues <- 1:24
-vaListues
-A <- matrix(vaListues, nrow = 6, ncol = 4, byrow = F)
+values <- 1:24
+values
+A <- matrix(values, nrow = 6, ncol = 4, byrow = F)
 A
-A <- matrix(vaListues, nrow = 6, ncol = 4, byrow = T)
+A <- matrix(values, nrow = 6, ncol = 4, byrow = T)
 A
 
 # Retrieving vaListues within a matrix:
@@ -238,6 +238,11 @@ is.matrix(dF)
 colnames(dF) <- c("Sample", "Prob.")
 dF
 colnames(dF)[2] <- "Chance"
+dF
+
+# add a new row to a data frame.
+dF <- data.frame(income.level = 1:5, is.corrupt = c(F, F, F, F, T), name = LETTERS[1:5], stringsAsFactors = FALSE)
+dF[6,] <- c(6, FALSE, "F")
 dF
 
 
