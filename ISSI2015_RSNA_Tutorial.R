@@ -73,7 +73,7 @@ A
 A <- matrix(values, nrow = 6, ncol = 4, byrow = T)
 A
 
-# Retrieving vaListues within a matrix:
+# Retrieving values within a matrix:
 A[1, 2]
 A[1, ]
 A[, 2]
@@ -332,7 +332,7 @@ list.files()
 
 AxA <- read.table("AxA_Adj.csv", header = FALSE, sep = ";")
 class(AxA)
-AxA.matrix <- as.matrix(AxA, matrix.type = "adjaceny")
+AxA.matrix <- as.matrix(AxA, matrix.type = "adjacency")
 Collaboration.Net <- as.network(AxA.matrix)
 Collaboration.Net
 gplot(Collaboration.Net)
@@ -534,6 +534,7 @@ symmetrize(g, rule = "strong")
 ## Degree centralities:::
 
 # Total degree
+Collaboration.Net <- as.network(g)
 degree(Collaboration.Net)
 
 # In degrees
