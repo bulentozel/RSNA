@@ -220,7 +220,7 @@ dF
 dF[5, 2] <- "TRUE"
 dF
 
-# Add new column:
+# Adding new column:
 
 dF$education <- c("PhD", "BSc", "Pre", "Pre", "Pre")
 dF
@@ -240,7 +240,7 @@ dF
 colnames(dF)[2] <- "Chance"
 dF
 
-# add a new row to a data frame.
+# adding a new row to a data frame.
 dF <- data.frame(income.level = 1:5, is.corrupt = c(F, F, F, F, T), name = LETTERS[1:5], stringsAsFactors = FALSE)
 dF[6,] <- c(6, FALSE, "F")
 dF
